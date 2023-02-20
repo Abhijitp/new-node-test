@@ -44,6 +44,7 @@ app.get('*', (req, res) => {
     res.send('No route available!!!!')
 })
 
-app.listen(3000, function() {
+const port = process.env.PORT || 3000;
+app.listen(port, function() {
     console.log("Listening to Port 3000");
 })
